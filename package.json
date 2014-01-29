@@ -4,7 +4,7 @@
   "description": "A route/path storing and parsing engine",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha --runner spec test/index.js"
+    "test": "node_modules/.bin/mocha --runner spec test/**.js"
   },
   "repository": {
     "type": "git",

@@ -5,6 +5,8 @@ var Piston = function () {
   this.routes = {};
 };
 
+Piston.Route = Route;
+
 Piston.prototype.register = function (options) {
   var piston = this;
   
