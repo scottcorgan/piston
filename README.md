@@ -11,6 +11,7 @@ npm install piston --save
 ## Usage 
 
 ```js
+var Piston = require('piston');
 var table = new Piston();
 
 table.register({
@@ -27,15 +28,15 @@ table.register({
 });
 
 var route = table.lookup('/my-path/123');
-route.params === {id: 123};
+route.params() === {id: 123};
 
 // Run 'before' methods
-route.value.before(req, res, function () {
+route.before(req, res, function () {
   // Done
 });
 
 // Run 'before' methods and 'handler'
-route.value.handler(req, res);
+route.handler(req, res);
 ```
 
 ## Run Tests
